@@ -1,1 +1,1 @@
-export './animations/page_2.dart';
+export 'animations/route_transition/widgets/page_2.dart';

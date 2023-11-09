@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../view.dart';
+import '../../view.dart';
 
 class RouteTransition extends StatelessWidget {
   static String routeName = "/route_trasition";
