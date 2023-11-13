@@ -22,6 +22,7 @@ class _AnimationContainerState extends State<AnimationContainer> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Animation Container'),
+        centerTitle: true,
       ),
       body: Body(
           width: _width,
