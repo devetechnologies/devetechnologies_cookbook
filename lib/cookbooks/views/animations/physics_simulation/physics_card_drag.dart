@@ -1,5 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:devetechnologies_cookbook/cookbooks/views/animations/physics_similation/widgets/draggable_card.dart';
+import 'package:devetechnologies_cookbook/cookbooks/views/animations/physics_simulation/widgets/draggable_card.dart';
 import 'package:devetechnologies_cookbook/cookbooks/views/view.dart';
 import 'package:flutter/material.dart';
 

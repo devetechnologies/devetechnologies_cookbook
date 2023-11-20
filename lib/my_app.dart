@@ -1,8 +1,8 @@
-import 'package:devetechnologies_cookbook/cookbooks/views/animations/animate_container/animation_container.dart';
-import 'package:devetechnologies_cookbook/cookbooks/views/desings/snackbar/top_snack_bar.dart';
 import 'package:devetechnologies_cookbook/helpers/routs.dart';
 import 'package:devetechnologies_cookbook/helpers/theme.dart';
 import 'package:flutter/material.dart';
+
+import 'cookbooks/views/animations/animate_container/animation_container.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Dvetechnologies cookbooks',
       theme: themeData(),
-      initialRoute: TopSnackbar.routeName, //AnimationContainer.routeName,
+      initialRoute: AnimationContainer.routeName,
       routes: routes,
     );
   }

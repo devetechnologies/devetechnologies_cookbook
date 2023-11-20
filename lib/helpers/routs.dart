@@ -1,5 +1,5 @@
 import 'package:devetechnologies_cookbook/cookbooks/views/animations/animate_container/animation_container.dart';
-import 'package:devetechnologies_cookbook/cookbooks/views/animations/physics_similation/physics_card_drag.dart';
+import 'package:devetechnologies_cookbook/cookbooks/views/animations/physics_simulation/physics_card_drag.dart';
 import 'package:devetechnologies_cookbook/cookbooks/views/animations/route_transition/route_transition.dart';
 import 'package:devetechnologies_cookbook/cookbooks/views/desings/snackbar/top_snack_bar.dart';
 import 'package:flutter/material.dart';
