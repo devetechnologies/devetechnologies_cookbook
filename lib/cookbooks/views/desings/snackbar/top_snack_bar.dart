@@ -1,6 +1,5 @@
-import 'package:devetechnologies_cookbook/cookbooks/views/desings/snackbar/widgets/custom_snackbar.dart';
-import 'package:devetechnologies_cookbook/widgets/top_snack_bar.dart';
 import 'package:flutter/material.dart';
+import '../../view.dart';
 
 class TopSnackbar extends StatelessWidget {
   static String routeName = "/top_snackbar";

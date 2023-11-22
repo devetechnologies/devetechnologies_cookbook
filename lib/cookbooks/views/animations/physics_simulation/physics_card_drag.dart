@@ -1,7 +1,7 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:devetechnologies_cookbook/cookbooks/views/animations/physics_simulation/widgets/draggable_card.dart';
 import 'package:devetechnologies_cookbook/cookbooks/views/view.dart';
 import 'package:flutter/material.dart';
+
+import 'widgets/draggable_card.dart';
 
 class PhysicsCardDrag extends StatelessWidget {
   static String routeName = "/physics_card";
