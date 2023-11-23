@@ -1,7 +1,6 @@
 import 'package:devetechnologies_cookbook/helpers/routs.dart';
 import 'package:devetechnologies_cookbook/helpers/theme.dart';
 import 'package:flutter/material.dart';
-
 import 'cookbooks/views/desings/tab_bar/custom_tab_bar.dart';
 
 class MyApp extends StatelessWidget {

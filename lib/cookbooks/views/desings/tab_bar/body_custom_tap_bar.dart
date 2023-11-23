@@ -8,40 +8,69 @@ class BodyCustomTapBar extends StatefulWidget {
 }
 
 class _BodyCustomTapBarState extends State<BodyCustomTapBar> {
+  List<String> items = [
+    "Home",
+    "Explore",
+    "Search",
+    "Feed",
+    "Posts",
+    "Activity",
+    "Setting",
+    "Profile",
+  ];
+
+  /// List of body icon
+  List<IconData> icons = [
+    Icons.home,
+    Icons.explore,
+    Icons.search,
+    Icons.feed,
+    Icons.post_add,
+    Icons.local_activity,
+    Icons.settings,
+    Icons.person
+  ];
+  int current = 0;
+  PageController pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
-    return SizedBox(
-      width: size.width,
-      height: size.height,
+    //var size = MediaQuery.of(context).size;
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      margin: const EdgeInsets.all(5),
       child: Column(
         children: [
-          Container(
-            margin: const EdgeInsets.only(top: 15),
-            width: size.width,
-            height: size.height * 0.25,
-            child: Stack(
-              children: [
-                Positioned(
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    child: SizedBox(
-                      width: size.width,
-                      height: size.height * 0.04,
-                      child: ListView.builder(
-                        physics: const BouncingScrollPhysics(),
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          return Padding(
-                              padding: EdgeInsets.only(
-                                  left: index == 0 ? 10 : 23, top: 7));
+          SizedBox(
+              width: double.infinity,
+              height: 80,
+              child: ListView.builder(
+                physics: const BouncingScrollPhysics(),
+                itemCount: items.length,
+                itemBuilder: (context, index) {
+                  return Column(
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            current = index;
+                          });
+                          pageController.animateToPage(current,
+                              duration: const Duration(microseconds: 200),
+                              curve: Curves.ease);
                         },
-                      ),
-                    ))
-              ],
-            ),
-          )
+                        child: AnimatedContainer(
+                          duration: const Duration(microseconds: 300),
+                          margin: const EdgeInsets.all(5),
+                          width: 100,
+                          height: 55,
+                        ),
+                      )
+                    ],
+                  );
+                },
+              ))
         ],
       ),
     );
