@@ -35,10 +35,10 @@ class _BodyCustomTapBarState extends State<BodyCustomTapBar> {
 
   @override
   Widget build(BuildContext context) {
-    //var size = MediaQuery.of(context).size;
+    var size = MediaQuery.of(context).size;
     return Container(
-      width: double.infinity,
-      height: double.infinity,
+      width: size.width,
+      height: size.height,
       margin: const EdgeInsets.all(5),
       child: Column(
         children: [_tabbar(), _body()],
@@ -48,7 +48,7 @@ class _BodyCustomTapBarState extends State<BodyCustomTapBar> {
 
   Container _body() {
     return Container(
-      margin: const EdgeInsets.only(top: 30),
+      margin: const EdgeInsets.only(top: 10),
       width: double.infinity,
       height: 550,
       child: PageView.builder(

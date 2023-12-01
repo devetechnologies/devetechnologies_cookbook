@@ -9,7 +9,7 @@ class CustomTapBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Custom Tap Bar!'),
+        title: const Text('Custom Tab Bar!'),
         centerTitle: true,
       ),
       body: const BodyCustomTapBar(),
